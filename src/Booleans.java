@@ -9,7 +9,7 @@ public class Booleans {
         Boolean operators:
         &&: Logical AND. Both values must be true
         ||: Logical OR. At least one value must be true
-        !: NOT. Negates a boolean (makes it false)
+        !: Logical NOT. Negates a boolean (makes it false)
          */
 
         int grade = 12;
