@@ -9,7 +9,9 @@ public class IfAndElse {
 
         // Question 1
         System.out.print("Question 1. Enter a number: ");
-        if(scan.nextDouble() > 100) System.out.println("Greater than 100");
+        double t;
+        if((t = scan.nextDouble()) > 100) System.out.println("Greater than 100");
+        else if(t == 100) System.out.println("Equal to 100");
         else System.out.println("Less than 100");
         System.out.println();
 
@@ -55,12 +57,15 @@ public class IfAndElse {
         // Question 7
         System.out.print("Question 7: Enter an integer: ");
         int c = scan.nextInt();
-        String s = "";
-        if((c & 0b10000000000000000000000000000000) == 0b10000000000000000000000000000000) s += "Negative ";
-        else s += "Positive ";
-        if(c % 2 == 0) s += "even number";
-        else s += "odd number";
-        System.out.println(s);
+        if(c == 0) System.out.println("Zero");
+        else {
+            String s = "";
+            if ((c & 0b10000000000000000000000000000000) == 0b10000000000000000000000000000000) s += "Negative ";
+            else s += "Positive ";
+            if (c % 2 == 0) s += "even number";
+            else s += "odd number";
+            System.out.println(s);
+        }
         System.out.println();
 
         // Question 8
