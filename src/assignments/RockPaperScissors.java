@@ -42,14 +42,19 @@ public class RockPaperScissors {
             String cs = "";
             switch (c){
                 case 0:
-                    cs = "rock";
-                    break;
+                    cs = "rock"; break;
                 case 1:
-                    cs = "paper";
-                    break;
+                    cs = "paper"; break;
                 case 2:
-                    cs = "scissors";
-                    break;
+                    cs = "scissors"; break;
+            }
+            switch (i){
+                case 0:
+                    ps = "rock"; break;
+                case 1:
+                    ps = "paper"; break;
+                case 2:
+                    ps = "scissors"; break;
             }
 
             if(c == i){
