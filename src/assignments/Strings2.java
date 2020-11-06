@@ -65,6 +65,7 @@ public class Strings2 {
         System.out.println(!s4.contains(s5) ? "Does not appear\n" : s4.replace(s5, s6) + "\n");
 
         // Question 5
+        // The line of code is ("Before " + s.indexOf("computer") + ", after " + (s.length() - (s.indexOf("computer") + "computer".length())));
         System.out.println("Question 5");
         System.out.println("Test case 1: aaacomputeraaaaa");
         String s7 = "aaacomputeraaaaa";
