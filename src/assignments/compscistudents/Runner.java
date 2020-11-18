@@ -13,6 +13,9 @@ public class Runner {
         System.out.println("Rose's mark: " + rose.getMark());
         rose.passStudent();
         System.out.println("Rose's mark: " + rose.getMark());
+        rose.setMark(70);
+        rose.passStudent();
+        System.out.println("Rose's mark: " + rose.getMark());
 
         APCompSciClass ben = new APCompSciClass("Ben", false, 95);
         System.out.println("Ben plays games: " + ben.isPlaysGamesInClass());
