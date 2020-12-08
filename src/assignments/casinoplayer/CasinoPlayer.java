@@ -1,9 +1,15 @@
 package assignments.casinoplayer;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class CasinoPlayer {
 
     String name;
-    int bal = 0;
+    int bal = 0, bet = 0;
+    static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    // Opening multiple bufferedReaders causes bugs and weird errors in Java. Therefore one reader
+    // will be created here. All classes shall read from it
 
     CasinoPlayer(){
     }
@@ -38,7 +44,7 @@ public class CasinoPlayer {
     }
 
     private boolean checkBal(int x){
-        return bal - x < 0 && x > 0;
+        return bal - x >= 0 && x > 0;
     }
 
     /* The checkBet functions were specified to be private, but a bet function was never told to be created */
@@ -52,5 +58,14 @@ public class CasinoPlayer {
 
     static int randNum(int low, int high){
         return (int) (Math.random() * (high - low)) + low;
+    }
+
+    boolean betAmount(int bet){
+        // Returns true if the bet actually went through. An alternative to throwing an exception
+        if(checkBet(bet)){
+            this.bet = bet;
+            return true;
+        }
+        return false;
     }
 }

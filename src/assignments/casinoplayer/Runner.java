@@ -1,7 +1,9 @@
 package assignments.casinoplayer;
 
+import java.io.IOException;
+
 public class Runner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         CasinoPlayer ben = new CasinoPlayer();
         CasinoPlayer aaron = new CasinoPlayer("Aaron");
         CasinoPlayer rose = new CasinoPlayer(10);
@@ -32,5 +34,29 @@ public class Runner {
         for (int i = 0; i < 20; i++) {
             System.out.print(CasinoPlayer.randNum(1, 100) + " ");
         }
+        System.out.println(); // Formatting
+
+        // New assignment
+        GuessingPlayer bill = new GuessingPlayer();
+        bill.deposit(500); // Give Bill some money
+        bill.play();
+        System.out.printf("Balance: %d\n", bill.getBal());
+        bill.play();
+        System.out.printf("Balance: %d\n", bill.getBal());
+        bill.play();
+        System.out.printf("Balance: %d\n", bill.getBal());
+        // Play 3 times for RNG to align and our tests to be good. Display balance every time
+        bill.deposit(1234567); // This class refuses to allow more than 1000 in an account
+        System.out.println(bill.getBal()); // Only 1000
+
+        RoulettePlayer kevinLi = new RoulettePlayer();
+        kevinLi.deposit(500);
+        kevinLi.play();
+        System.out.printf("Balance: %d\n", kevinLi.getBal());
+        kevinLi.play();
+        System.out.printf("Balance: %d\n", kevinLi.getBal());
+        kevinLi.play();
+        System.out.printf("Balance: %d\n", kevinLi.getBal());
+        // Play 3 times, for each betting method
     }
 }
