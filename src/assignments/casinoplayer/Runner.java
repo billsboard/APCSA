@@ -58,5 +58,6 @@ public class Runner {
         kevinLi.play();
         System.out.printf("Balance: %d\n", kevinLi.getBal());
         // Play 3 times, for each betting method
+        RoulettePlayer.printBetChances();
     }
 }

@@ -58,6 +58,6 @@ public class RoulettePlayer extends GuessingPlayer {
     }
 
     static void printBetChances(){
-        System.out.println("Single number: 1/39\nRange: (max - min + 1)/39\nParity: 1/2");
+        System.out.println("Single number: 1/39\nRange: 1/3\nParity: 1/2");
     }
 }
