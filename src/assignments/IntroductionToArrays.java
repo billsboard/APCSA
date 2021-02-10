@@ -223,7 +223,7 @@ public class IntroductionToArrays {
         for (int i : arr16) {
             System.out.print(i + " ");
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
 
 
         int arr17[] = {1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9};
