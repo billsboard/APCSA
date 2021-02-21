@@ -87,7 +87,6 @@ public class TwoDimensionalArrays {
                 cnt++;
                 if(cnt == 2){
                     cnt = 0;
-                    //cw = 1;
                     w++;
                 }
             }
